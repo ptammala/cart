@@ -8,8 +8,10 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
+                script{
                 demo.info 'Starting'
                 demo.warning 'Nothing to do!'
+                }
             }
         }
         stage('Test') {
